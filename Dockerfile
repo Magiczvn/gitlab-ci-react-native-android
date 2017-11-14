@@ -84,7 +84,7 @@ ENV PATH $PATH:$GRADLE_HOME/bin
 # ——————————
 # Install Node and global packages
 # ——————————
-ENV NODE_VERSION 6.10.2
+ENV NODE_VERSION 9.1.0
 RUN cd && \
     wget -q http://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.gz && \
     tar -xzf node-v${NODE_VERSION}-linux-x64.tar.gz && \
@@ -98,6 +98,5 @@ ENV PATH ${PATH}:/opt/node/bin
 # ——————————
 RUN npm install react-native-cli -g
 RUN npm install yarn -g
-RUN npm install npm@5.0.3 -g
 
 ENV LANG en_US.UTF-8
