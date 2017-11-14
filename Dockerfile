@@ -96,8 +96,8 @@ ENV PATH ${PATH}:/opt/node/bin
 # ——————————
 # Install Basic React-Native packages
 # ——————————
-RUN npm update -g
 RUN npm install react-native-cli -g
 RUN npm install yarn -g
+RUN npm install npm@5.0.3 -g
 
 ENV LANG en_US.UTF-8
